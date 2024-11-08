@@ -33,9 +33,9 @@ public class Human {
     public float faith = 5;
 
     public Human(String firstName,
-                 String lastName,
-                 String gender,
-                 int age){
+                String lastName,
+                String gender,
+                int age){
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -71,41 +71,42 @@ public class Human {
 
     // attrubute overall getter
     public int getPhysicalOverall(){
-        int total = this.strength + this.endurance + this.durability;
-        return (float) (total / 100) * 100;
+        float total = this.strength + this.endurance + this.durability;
+        return (int) ((total / 100) * 100);
     }
     public int getMovementOverall(){
-        int total = this.agility + this.mobility;
-        return (float) (total / 100) * 100;
+        float total = this.agility + this.mobility;
+        return (int) ((total / 100) * 100);
     }
     public int getMindOverall(){
-        int total = this.intelligence + this.dexterity + this.faith;
-        return (float) (total / 100) * 100;
+        float total = this.intelligence + this.dexterity + this.faith;
+        return (int) ((total / 100) * 100);
     }
 
     // attribute setter
-    public float setStrength(float strength){
+    public void setStrength(float strength){
         this.strength = strength;
     }
-    public float setEndurance(float endurance){
+    public void setEndurance(float endurance){
         this.endurance = endurance;
     }
-    public float setDurability(float durability){
+    public void setDurability(float durability){
+
         this.durability = durability;
     }
-    public float setAgility(float agility){
+    public void setAgility(float agility){
         this.agility = agility;
     }
-    public float setMobility(float mobility){
+    public void setMobility(float mobility){
         this.mobility = mobility;
     }
-    public float setIntelligence(float intelligence){
+    public void setIntelligence(float intelligence){
         this.intelligence = intelligence;
     }
-    public float setDexterity(float dexterity){
+    public void setDexterity(float dexterity){
         this.dexterity = dexterity;
     }
-    public float setFaith(float faith){
+    public void setFaith(float faith){
         this.faith = faith;
     }
 
